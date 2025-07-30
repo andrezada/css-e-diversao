@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+div{
+    transition-duration: 2s;
+    border: 5px solid white;
+    background-color: transparent;
+}
+div:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.parede {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 205px;
+    transform: rotateX(45deg) rotateY(45deg); 
+    z-index: 12; 
+}
+.parede:hover{
+    transform: translate(-180px);
+}
+
+
+.ptras {
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    background-size: cover;
+    top: 185px;
+    transform: translate(25px) rotate(-1deg); 
+    border: 2px solid white;
+    z-index: 10;
+}
+.ptras:hover {
+    z-index: 20;
+    transform: translateX(-180px) translateY(200px)  rotate(180deg) scale(1.6);
+}
+.plado {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    top: 203px;
+    transform: translate(180px) rotateX(45deg) rotateY(45deg);
+    z-index: 11;
+} 
+.plado:hover {
+    transform: translate(380px);
+}
+.frente {
+    border: 2px solid white;
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    background-size: cover;
+    top: 278px;
+    transform: translate(155px) rotate(-1deg); 
+    z-index: 13;
+}
+.frente:hover {
+    z-index: 20;
+    width: 99%;
+    height: 100%;
+    display: block;
+    top: 0px;
+    transform:translateY(-2px) rotate(360deg);
+    background-image:url(xereke.jpg);
+}
