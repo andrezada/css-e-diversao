@@ -1,6 +1,6 @@
 /*HOME*/
 .botao{
-  background-color: crimson;
+  background-color: #194b32;
     padding: 10px;
     position: absolute;
     top: 20px;
@@ -9,6 +9,13 @@
     font-size: 20px;
     text-decoration: none;
     border-radius: 10px;
+    transition: transform 0.3s;
+    transition-duration: 1.7s;
+}
+.botao:hover{
+    background-color: #D0E4AE;
+    color: #194b32;
+    transform: scale(1.2);
 }
 
 /*ATRIBUTOS GERAIS*/
@@ -89,4 +96,19 @@ div:hover{
     top: 0px;
     transform:translateY(-2px) rotate(360deg);
     background-image:url(xereke.jpg);
+}
+@media (max-width: 900px) {
+     .geral {
+        position: absolute;
+        left: 40%;
+    }
+    .frente:hover {
+        top: 500px;
+        width: 300px;
+        height: 200px;
+        transform: translateY(2px) rotate(-360deg);
+        background-image: url(xereke.jpg);
+        background-image: cover;
+        border: none;
+    }
 }
