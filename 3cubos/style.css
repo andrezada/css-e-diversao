@@ -1,0 +1,153 @@
+/*HOME*/
+.voltar {
+  border-radius: 10px;
+  background-color: crimson;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*PRIMEIRO BLOCO*/
+body {
+  background-color: black;
+}
+
+span {
+  border: 3px solid white;
+  transition-duration: 5s;
+  transition: transform 1.1s;
+}
+.bloco {
+  transition-duration: 5s;
+  transition: transform 1.5s;
+}
+.bloco:hover {
+  transform: translateY(-200px);
+  .pteto {
+    transform: translateY(-100px)
+      matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
+  }
+}
+.plado {
+  background-color: aqua;
+  padding: 49px;
+  position: absolute;
+  top: 364px;
+  left: 464px;
+}
+.pfrente {
+  background-color: aqua;
+  padding: 70px;
+  position: absolute;
+  top: 308px;
+  left: 544px;
+  transform: rotateX(45deg) rotateY(-45deg) translate(1px);
+}
+.pfrente:hover {
+  transform: rotateX(45deg) rotateY(-45deg) translate(100px);
+}
+.pteto {
+  background-color: aqua;
+  padding: 71px;
+  position: absolute;
+  top: 253px;
+  left: 494px;
+  transform: matrix3d(
+    0.7,
+    0,
+    0,
+    0,
+    -0.7,
+    0.5,
+    0.1,
+    0,
+    -0.6,
+    -0.5,
+    0.5,
+    0,
+    0,
+    0,
+    0,
+    1
+  );
+}
+
+/* SEGUNDO BLOCO*/
+.bloco2 {
+  transition-duration: 5s;
+  transition: transform 1.5s;
+}
+
+.bloco2:hover {
+  transform: translateY(-200px);
+  .teto2 {
+    transform: scale(1.4)
+      matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1)
+      translateZ(-200px);
+  }
+}
+.frente2 {
+  background-color: blue;
+  padding: 70px;
+  position: absolute;
+  top: 322px;
+  left: 570px;
+}
+.lado2 {
+  background-color: blue;
+  padding: 70px;
+  position: absolute;
+  top: 271px;
+  left: 713px;
+  transform: rotateX(45deg) rotateY(-45deg) scale(1.4);
+}
+.teto2 {
+  background-position: cover;
+  background-color: blue;
+  padding: 70px;
+  position: absolute;
+  top: 200px;
+  left: 641px;
+  transform: scale(1.4)
+    matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
+  z-index: 11;
+}
+
+/* TERCEIRO BLOCO */
+.bloco3 {
+  transition-duration: 5s;
+  transition: transform 1.5s;
+}
+.pfrente3 {
+  background-color: fuchsia;
+  width: 190px;
+  height: 120px;
+  position: absolute;
+  top: 342px;
+  left: 720px;
+}
+
+.plado3 {
+  background-color: fuchsia;
+  width: 190px;
+  height: 120px;
+  position: absolute;
+  top: 275px;
+  left: 914px;
+  transform: rotateX(45deg) rotateY(-45deg) scale(1.4);
+}
+
+.pteto3 {
+  background-color: fuchsia;
+  width: 197px;
+  height: 190px;
+  position: absolute;
+  top: 177px;
+  left: 812px;
+  transform: scale(1.4)
+    matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
+}
