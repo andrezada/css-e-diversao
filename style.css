@@ -118,7 +118,7 @@ span:hover{
     z-index: 100;
 }
 .folhas span {
-    background-image: url(/folha.webp);
+    background-image: url(folha.webp);
     background-size: cover;
     animation: voar calc(30s/ var(--i)) linear infinite;
     z-index: 100;
