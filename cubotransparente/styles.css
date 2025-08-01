@@ -10,22 +10,24 @@
     text-decoration: none;
     border-radius: 10px;
     transition: transform 0.3s;
+    transition: all 0.3s;
     transition-duration: 1.7s;
 }
 .botao:hover{
     background-color: #D0E4AE;
     color: #194b32;
     transform: scale(1.2) translateY(-13px) translateX(20px);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.424);
 }
 
 /*ATRIBUTOS GERAIS*/
 
 body{
-    background-color: black;
+    background-color: white;
 }
 div{
     transition-duration: 2s;
-    border: 5px solid white;
+    border: 5px solid #194b32;
     background-color: transparent;
 }
 div:hover{
@@ -59,7 +61,7 @@ div:hover{
     background-size: cover;
     top: 185px;
     transform: translate(25px) rotate(-1deg); 
-    border: 2px solid white;
+    border: 2px solid #194b32;
     z-index: 10;
 }
 .ptras:hover {
@@ -79,7 +81,7 @@ div:hover{
     transform: translate(380px);
 }
 .frente {
-    border: 2px solid white;
+    border: 2px solid #194b32;
     position: absolute;
     width: 180px;
     height: 130px;
