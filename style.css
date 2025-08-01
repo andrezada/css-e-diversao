@@ -1,62 +1,93 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Celular*/
 @media screen and (max-width: 900px) {
     .body{
         flex-direction: column;
         margin-left: 5%;
         margin-right: 5%;
+        height: 1200px;
     }
     .modelos{
         flex-direction: column;
+
 }
+    span{
+        font-size: 50px;
+        padding: 20px;
+        height: 100%;
+    }
   .segundo{
         display: flex;
         margin: 150px;
     }
   }
   /* Fundo */
-  body{
+
+
+body{
     background-color: #93b4db;
-  }
+    width: 100vw;
+    height: 90vh;
+    box-sizing: border-box;
+}
 
 /*textos*/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    text-align: center;
+    color: white;
     font-size: 50px;
+    position: relative;
+    text-align: center;
+    z-index: 101;
 }
 p{
+    position: relative;
     text-align: center;
     font-size: 20px;
+    z-index: 101;
 }
 /*Modelos*/
 .modelos{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: row;
     background-color: transparent;
-    padding: 90px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    z-index: 100;
+    padding: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 70px;
+    width: 100%;
+    z-index: 101;
 }
 a{
     text-decoration: none;
 }
+.modelos{
+    box-sizing: border-box;
+    padding-left: 190px;
+    padding-right: 190px;
+}
 /*Estilos dos modelos*/
 span{
     color: white;
-    font-size: 20px;
     text-decoration: none;
     background-color: #194b32;
     padding: 50px;
     font-size: 100px;
     border-radius: 20px;
-    transition-duration: 5s;
     transition: all 1.1s;
+    z-index: 101;
 }
 span:hover{
     background-color: #D0E4AE;
@@ -76,18 +107,21 @@ span:hover{
     position: absolute;
     top: 10%;
     left: -50px;
-    z-index: 1;
-    background-size: cover;
+    z-index: 100;
 }
 .folhas span{
     margin: 200%;
     padding: 5px;
     width: 10px;
     height: 10px;
+    background-color: transparent;
+    z-index: 100;
 }
 .folhas span {
-    background-color: #229a00;
-    animation: voar calc(30s/ var(--i)) linear infinite;;
+    background-image: url(/folha.webp);
+    background-size: cover;
+    animation: voar calc(30s/ var(--i)) linear infinite;
+    z-index: 100;
 }
 
 @keyframes voar {
@@ -98,13 +132,12 @@ span:hover{
         transform: translateX(50vh) translateY(-10vh) rotateX(45deg);
     }
     50% {
-        transform: translateX(110vh) translateY(15vh) rotate(-130deg);
+        transform: translateX(110vh) translateY(14vh) rotate(-130deg);
     }
     100% {
-        transform: translateX(210vh) translateY(-10vh) rotateX(-45deg);
+        transform: translateX(223vh) translateY(-10vh) rotateX(-45deg);
     }
 }
-
 
 
 

@@ -4,11 +4,18 @@
   background-color: #194b32;
   padding: 10px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 30px;
+  left: 30px;
   color: white;
   font-size: 20px;
   text-decoration: none;
+  transition: transform 0.3s;
+  transition-duration: 2s;
+}
+.voltar:hover{
+  background-color: white;
+  color: #194b32;
+  transform: scale(1.2) translateY(-13px) translateX(20px);
 }
 
 /*PRIMEIRO BLOCO*/

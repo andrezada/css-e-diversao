@@ -3,8 +3,8 @@
   background-color: #194b32;
     padding: 10px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -15,7 +15,7 @@
 .botao:hover{
     background-color: #D0E4AE;
     color: #194b32;
-    transform: scale(1.2);
+    transform: scale(1.2) translateY(-13px) translateX(20px);
 }
 
 /*ATRIBUTOS GERAIS*/
