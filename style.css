@@ -25,7 +25,9 @@ html, body {
     }
   .segundo{
         display: flex;
-        margin: 150px;
+        margin-top: 150px;
+        margin-bottom: 150px ;
+        
     }
   }
   /* Fundo */
