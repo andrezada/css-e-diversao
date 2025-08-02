@@ -12,7 +12,7 @@
   transition: transform 0.3s;
   transition-duration: 2s;
 }
-.voltar:hover{
+.voltar:hover {
   background-color: #d0e4ae;
   color: #194b32;
   transform: scale(1.2) translateY(-13px) translateX(20px);
@@ -86,25 +86,21 @@ span {
 
 /* SEGUNDO BLOCO*/
 .bloco2 {
-    position: relative;
+  position: relative;
   transition-duration: 5s;
   transition: transform 1.5s;
-  z-index: 1010;
 }
 
 .bloco2:hover {
   transform: translateY(-200px);
   .teto2 {
+    z-index: top;
     transform: scale(1.4)
       matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1)
-      translateZ(-200px);
-      z-index: 1012;
-  }
-     .lado2{
-    z-index: 1010;
+      translateZ(100px)
+      translateY(200px);
   }
 }
-
 .frente2 {
   background-color: #194b32;
   padding: 70px;
@@ -121,7 +117,6 @@ span {
   transform: rotateX(45deg) rotateY(-45deg) scale(1.4);
 }
 .teto2 {
-  background-position: cover;
   background-color: #194b32;
   padding: 70px;
   position: absolute;
@@ -129,16 +124,22 @@ span {
   left: 641px;
   transform: scale(1.4)
     matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
-  z-index: 11;
 }
 
 /* TERCEIRO BLOCO */
 .bloco3 {
-    position: relative;
+  position: relative;
   transition-duration: 5s;
   transition: transform 1.5s;
-  z-index: 1015;
 }
+.bloco3:hover{
+  .pteto3{
+     transform: scale(1.4) 
+     translate(150px, 80px)
+    matrix3d(0.7, 0.5, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
+  }
+}
+
 .pfrente3 {
   background-color: #39184a;
   width: 190px;
@@ -167,9 +168,4 @@ span {
   left: 812px;
   transform: scale(1.4)
     matrix3d(0.7, 0, 0, 0, -0.7, 0.5, 0.1, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
-}
-
-
-/* todos  os blocos */
-@media  (max-width: 1500px) {
 }
