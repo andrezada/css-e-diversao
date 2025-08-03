@@ -131,7 +131,7 @@ a{
 
 @keyframes voar {
     0% {
-        transform: translateX(0);
+        transform: translateX(-100px);
     }
     25% {
         transform: translateX(50vh) translateY(-10vh) rotateX(45deg);
@@ -140,7 +140,7 @@ a{
         transform: translateX(150vh) translateY(7vh) rotate(-130deg) scale(1);
     }
     100% {
-        transform: translateX(220vh) translateY(-10vh) rotateX(-45deg) scale(0);
+        transform: translateX(210vh) translateY(-10vh) rotateX(-45deg) scale(0);
     }
 }
 
@@ -164,5 +164,4 @@ h1 span{
     text-shadow: 1px 5px 2px black;
 
 }
-
 
